@@ -1,0 +1,79 @@
+//1 - Pergunta sobre Idade:
+let idade = prompt("Qual é a sua idade?");
+
+if (idade < 18) {
+  console.log("Menor de idade");
+} else if (idade < 65) {
+  console.log("Adulto");
+} else {
+  console.log("Idoso");
+}
+
+//2- Pergunta sobre Números:
+let num1 = prompt("Digite o primeiro número:");
+let num2 = prompt("Digite o segundo número:");
+
+if (num1 > num2) {
+  console.log("O primeiro número é maior");
+} else if (num1 === num2) {
+  console.log("Os números são iguais");
+} else {
+  console.log("O segundo número é maior");
+}
+
+//3- Pergunta sobre Dia da Semana:
+let dia = prompt("Digite um número de 1 a 7 para representar um dia da semana:");
+
+if (dia == 1) {
+  console.log("Domingo");
+} else if (dia == 2) {
+  console.log("Segunda-feira");
+} else if (dia == 3) {
+  console.log("Terça-feira");
+} else if (dia == 4) {
+  console.log("Quarta-feira");
+} else if (dia == 5) {
+  console.log("Quinta-feira");
+} else if (dia == 6) {
+  console.log("Sexta-feira");
+} else if (dia == 7) {
+  console.log("Sábado");
+} else {
+  console.log("Número inválido. Digite um número de 1 a 7.");
+}
+
+//4- Pergunta sobre Classificação de Notas:
+let nota = prompt("Digite uma nota de 0 a 100:");
+
+if (nota < 60) {
+  console.log("Reprovado");
+} else if (nota < 75) {
+  console.log("Regular");
+} else if (nota < 90) {
+  console.log("Bom");
+} else {
+  console.log("Excelente");
+}
+
+//5- Pergunta sobre Tipo de Triângulo:
+let lado1 = prompt("Digite o primeiro lado do triângulo:");
+let lado2 = prompt("Digite o segundo lado do triângulo:");
+let lado3 = prompt("Digite o terceiro lado do triângulo:");
+
+if (lado1 == lado2 && lado2 == lado3) {
+  console.log("Equilátero");
+} else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3) {
+  console.log("Isósceles");
+} else {
+  console.log("Escaleno");
+}
+
+//6- Pergunta sobre Ano Bissexto:
+let ano = prompt("Digite um ano:");
+
+if ((ano % 4 == 0) && (ano % 100 != 0) || (ano % 400 == 0)) {
+  console.log(ano + " é um ano bissexto");
+} else {
+  console.log(ano + " não é um ano bissexto");
+}
+
