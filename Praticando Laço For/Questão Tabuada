@@ -1,0 +1,10 @@
+/*
+Crie um script que utiliza um loop for para gerar a tabuada de um 
+número especifico. Por exemplo, se o número for 5, o programa deve
+imprimir a tabuada de 5 até 10.
+*/
+const num = parseInt(prompt("Informe um número inteito"));
+
+for(let i = num; i <= 10; i=i+1) {
+    console.log(`${num} x ${i} = ${num * i}`);
+}
