@@ -1,0 +1,9 @@
+//1.Crie um programa que solicite ao usuário que insira um número. Em seguida, o programa deve imprimir a tabuada de multiplicação desse número de 1 a 10.
+let num = prompt('Digite um número');
+let cont = 1;
+
+while (cont <= 10) {
+    let result = num * cont;
+    console.log(num + "x" + cont + "=" + result);
+    cont = cont + 1;
+}
